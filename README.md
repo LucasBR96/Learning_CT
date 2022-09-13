@@ -9,7 +9,7 @@ scan and spot all possible nodes in it. The second will read scan candidates and
 to further investigate. Thus, this project will cover the development of such networks; the application that
 will integrate both of them and the scrips necessary for reading raw training data and, of course, training.
 
-THE DATA----------------------------------------
+# The Data
 
 The raw data used in this project comes from the LUNA dataset ( download at https://luna16.grand-challenge
 .org/Description ). The set contains dozens of real lif CT scans and annotations about them.
@@ -25,7 +25,7 @@ The annotations are a set of weird spots in the scans that might be nodules or e
 two files. The first contais a list of suspects, marked by their ct scans identification and the milimetric 
 positions inside of it. The seconds have the confirmed suspects, each ove have the same information of the other set plus the radius of the nodule/tumor. 
 
-THE FILES -------------------------------------
+# The Files
 
 The files of this project will be divided in three parts. First, the code necessary to transform the raw data
 into proto-data that the networks con work with. Second, each network will have its own folder, with scripts to transform the proto-data into actual input, the code of the network itself and scripts to train each network. Finally, the application that will implement and manege both networks. Also, there will be an extra folder with
